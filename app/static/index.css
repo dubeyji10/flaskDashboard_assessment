@@ -1,0 +1,236 @@
+.b1{
+    
+    background-color: salmon;
+
+}
+
+.wrapper{
+    padding: 10px 10px 10px 10px;
+    /* margin: 20px 20px 50px 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    /* grid-template-rows: 1fr 5fr 1fr; */
+    /* grid-template-rows: 10% 80% 10%; */
+    
+    grid-row-gap:0.51em;
+    /* justify-content: center; */
+    align-content: center;
+}
+
+
+#header{
+    display:flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    
+    justify-content:space-around;
+    /* justify-content:space-evenly; */
+    font-size: 2em;
+    /* background-color: rgb(255, 246, 124); */
+    background: linear-gradient(-45deg,rgb(202, 175, 202),rgb(182, 250, 227),rgb(250, 180, 237));
+    overflow-x:visible;
+}
+
+#header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#header div img{
+    height: 20px;
+    width: 30px;
+    background-color: aliceblue;
+}
+
+#header a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: smaller;
+}
+
+#body{
+    /* background-color: rgb(174, 248, 202); */
+    background-color: rgb(252, 252, 209);
+    display: grid;
+    justify-items: center;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+
+#B1{
+    
+    display: grid;
+    background-color: rgb(245, 243, 147);
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+}
+
+.b2{
+    
+    background-color: palegoldenrod;
+
+}
+
+#B1 div:nth-child(2) {
+    /* background-color: #a6f3f3; */
+    font-size: 2em;
+    text-align: center;
+}
+
+
+#B3{
+    background-color: rgb(228, 253, 114);
+    /* max-width: max-content; */
+    /* justify-content: space-evenly; */
+    justify-content: center;
+}
+
+
+#B3 div{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(245, 175, 135);
+    align-items: flex-end;
+
+    height: min-content;
+
+}
+
+
+#B6{
+    background-color: rgb(245, 222, 168);
+    font-size: smaller;
+}
+
+/* column-count: 2; */
+
+
+ul {
+    padding-top: 2%;
+    justify-content: center;
+    -webkit-columns: 5;
+       -moz-columns: 5;
+            columns: 3;
+    -moz-column-count: 10;
+    /* max-width: 80%; */
+  }
+  ul li {
+    list-style-position: inside;
+    -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+                   break-inside: avoid;
+    /* text-transform: uppercase; */
+    text-align: center;
+    font-size: larger;
+    /* width: 33%; */
+  }
+
+
+.li2{
+    font-size: larger;
+}
+
+
+#tableData{
+    min-width: 80%;
+    border-radius: 22px;
+    background-color: rgb(250, 215, 149);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+th{
+    background-color: bisque;
+}
+tr{
+    
+    font-size: smaller;
+}
+
+.listItems{
+    
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    /* grid-auto-rows: minmax(100px, auto); */
+    /* grid-auto-rows: 250px; */
+
+}
+
+/* #listItems div {
+    color: aliceblue;
+    font-size: 2rem;
+    border-left: 1px seagreen solid;
+    border-right: 1px rgb(5, 3, 7) solid;
+    padding-bottom: 10%;
+
+}
+ */
+
+ .listItems div {
+    height: fit-content;
+    text-align: center;
+}   
+
+
+#B2{
+    font-size: 2em;
+    background-color: rgb(120, 247, 194);
+    padding-top: 10px;
+    margin-top: 11px;
+    text-align: center;
+}
+
+#B2 a{
+    display: block;
+    padding: 2px 2px 2px 2px;
+    border-radius: 11px;
+    background-color: rgb(242, 252, 101);
+    text-decoration: none;
+}
+
+.myFilterList{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(240, 195, 136);
+}
+.myFilterList div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.44em;
+    min-height: 50px;
+    text-align: center;
+    width: 100%;
+    border: 2px seashell solid;
+}
+
+#chart_div{
+    min-width: 1000px;
+    min-height: 700px;
+    /* padding-left: 20%; */
+    /* padding-right: 20%; */
+    background-color: rgb(253, 253, 253);
+
+}
+
+/* -------------------------------- w3Schools*/
+/* Tooltip container */

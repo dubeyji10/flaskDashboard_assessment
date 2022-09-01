@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Rendering Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+        const jsonData = {
+            "data": {{ data| tojson }}
+                };
+        console.log("data recieved : ", jsonData);
+        
+    </script>
+</head>
+
+<body>
+    <div id="B2"> 
+        Using Google Charts API <br>for rendering data points recieved from the server
+        <br>
+        <a target="_blank" href={{ url_for('chartsPrediction') }}>
+            Predictions for Per_Capita_in_USD
+            <img alt="icon" src="{{ url_for('static', filename = 'line-chart.png') }}"/> 
+        </a>
+    </div>
+    <div id="filterList" class="myFilterList">
+        <div id="filter" class="myFilter">GDP_In_Billion_USD</div>
+
+        <div id="filter" class="myFilter">Per_Capita_in_USD</div>
+
+        <div id="filter" class="myFilter">Percentage_Growth </div>
+    </div>
+
+    <div id="chart_div"></div>
+
+</body>
+
+</html>
+<script>
+    function chartDrawWithFilter(arrayNeededHere,newTitle , currMax  ,currMin){
+        console.log("render chart : ",newTitle);
+        console.log(" range  : ",currMax  ,currMin);
+        console.log("chartDrawWithFilter called for  : ",arrayNeededHere[0][0],arrayNeededHere[0][1])
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            // var data = google.visualization.arrayToDataTable([
+            //   ['Age', 'Weight'],
+            //   [ 8,      12],
+            //   [ 4,      5.5],
+            //   [ 11,     14],
+            //   [ 4,      5],
+            //   [ 3,      3.5],
+            //   [ 6.5,    7]
+            // ]);
+            var data = google.visualization.arrayToDataTable(arrayNeededHere);
+            var options = {
+                title: newTitle,
+                vAxis: { title: arrayNeededHere[0][1], minValue: currMin, maxValue: currMax },
+                hAxis: { title: 'Year', minValue: 2010, maxValue: 2022 },
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+        }
+        console.log(" rendered chart for new filters ");
+    }
+    // after the page has loaded -- so no uncaugth error --
+    const currFilter = document.getElementById('filterList');
+    currFilter.addEventListener('click',function(e){
+
+        // console.log('you choose filter : ',e.target);
+        const currFilterOption = e.target.textContent;
+        console.log('you choose filter ->',currFilterOption);
+        const newTitle = `Year vs. ${currFilterOption} comparison`;
+        console.log('render chart : ',newTitle);
+        let currMax=0,currMin = 3000; // for current filter min and max
+        let arrayNeeded = [];
+        arrayNeeded.push(['Year', currFilterOption]);
+        jsonData.data.forEach(element => {
+            currMin = element[currFilterOption] < currMin ? element[currFilterOption]:currMin;
+            currMax = element[currFilterOption] > currMax ? element[currFilterOption]:currMax;
+            console.log("new max : ",currMax , "new min : ", currMin);
+            console.log(element['Year'], '->', element[currFilterOption]);
+            arrayNeeded.push([element['Year'], element[currFilterOption]]);
+        });
+        console.log('--------------------------------------');
+        console.log("\narray needed is now  :", arrayNeeded);
+        console.log('\n--------------------------------------');
+        chartDrawWithFilter(arrayNeeded , newTitle , currMax , currMin);
+        e.preventDefault();
+    });
+</script>

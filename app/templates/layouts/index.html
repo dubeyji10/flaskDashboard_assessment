@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title> Homepage </title>
+    <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet">
+
+
+    <!-- for json to tables -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/dt/dt-1.10.22/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/r/dt/dt-1.10.22/datatables.min.js"></script>
+
+    <!--  -->
+
+</head>
+
+  <!-- list of distinct topics which could filter the dataset -->
+                                <!-- fun8 returns the distinct topics -->
+<body>
+
+    <div class="wrapper">
+        
+        <div id="header" > 
+
+            <!-- removed some items from fields 
+            just comment out or remove that line to create filters on them -->
+            <!-- working on filters -->
+                {% for field in fields %}
+                            <div>
+                                <a target="_blank" href="#"> {{ field }} </a>
+                                <a target="_blank" href="#">
+                                    
+                                    <img alt="icon" src="{{ url_for('static', filename = 'line-chart.png') }}"/> 
+
+                                </a>
+                            </div>
+                {% endfor %}
+
+        </div>
+
+        <div id="body">
+
+
+            <div id="B1">
+                <h2> First {{data|length}}  records displayed below </h2>
+                <div><a href={{ url_for('all_records') }} target="_blank">Click</a> to discover all records</div>
+            </div>  
+
+            <script>
+                $( document ).ready(function() {
+                        getDataForDatatables();
+                    });
+        
+            function getDataForDatatables(){
+                var jsonData = {
+                "data" :    {{ data|tojson }}
+                };
+                setDataToTable(jsonData);
+                }
+                
+            function setDataToTable(jsonData){
+                console.log("__________2__________");
+                console.log(jsonData);
+                console.log("\n\n ......................... 2 ......................... \n\n");
+                $('#tableTopic').DataTable( {
+                pagination: "bootstrap",
+                filter:true,
+                data: jsonData.data,
+                destroy: true,
+                lengthMenu:[5,10,20],
+                pageLength: 8,
+                    "columns":[  
+                            
+            
+                        {     "data"     :     "Year"      },  
+                        {     "data"     :     "Percentage_Growth "     } ,
+                        {     "data"     :     "Per_Capita_in_USD"      },  
+                        {     "data"     :     "GDP_In_Billion_USD"      },  
+            
+                        ]
+                } );
+                }
+                </script>
+                <div id="tableData">
+                    <table id="tableTopic" class="display" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Percentage_Growth</th>
+                            <th>Per_Capita_in_USD</th>
+                            <th>GDP_In_Billion_USD</th>
+                        </tr>
+                    </thead>
+                    </table>
+                </div>
+
+
+            </div>
+
+
+    </div>
+
+
+
+</body>
+</html>

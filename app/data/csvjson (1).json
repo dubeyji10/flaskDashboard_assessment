@@ -1,0 +1,368 @@
+[
+  {
+    "Year": 2021,
+    "GDP_In_Billion_USD": 3173.4,
+    "Per_Capita_in_USD": 2277,
+    "Percentage_Growth": 8.95
+  },
+  {
+    "Year": 2020,
+    "GDP_In_Billion_USD": 2667.69,
+    "Per_Capita_in_USD": 1933,
+    "Percentage_Growth": -6.6
+  },
+  {
+    "Year": 2019,
+    "GDP_In_Billion_USD": 2831.55,
+    "Per_Capita_in_USD": 2072,
+    "Percentage_Growth": 3.74
+  },
+  {
+    "Year": 2018,
+    "GDP_In_Billion_USD": 2702.93,
+    "Per_Capita_in_USD": 1998,
+    "Percentage_Growth": 6.45
+  },
+  {
+    "Year": 2017,
+    "GDP_In_Billion_USD": 2651.47,
+    "Per_Capita_in_USD": 1981,
+    "Percentage_Growth": 6.8
+  },
+  {
+    "Year": 2016,
+    "GDP_In_Billion_USD": 2294.8,
+    "Per_Capita_in_USD": 1733,
+    "Percentage_Growth": 8.26
+  },
+  {
+    "Year": 2015,
+    "GDP_In_Billion_USD": 2103.59,
+    "Per_Capita_in_USD": 1606,
+    "Percentage_Growth": 8
+  },
+  {
+    "Year": 2014,
+    "GDP_In_Billion_USD": 2039.13,
+    "Per_Capita_in_USD": 1574,
+    "Percentage_Growth": 7.41
+  },
+  {
+    "Year": 2013,
+    "GDP_In_Billion_USD": 1856.72,
+    "Per_Capita_in_USD": 1450,
+    "Percentage_Growth": 6.39
+  },
+  {
+    "Year": 2012,
+    "GDP_In_Billion_USD": 1827.64,
+    "Per_Capita_in_USD": 1444,
+    "Percentage_Growth": 5.46
+  },
+  {
+    "Year": 2011,
+    "GDP_In_Billion_USD": 1823.05,
+    "Per_Capita_in_USD": 1458,
+    "Percentage_Growth": 5.24
+  },
+  {
+    "Year": 2010,
+    "GDP_In_Billion_USD": 1675.62,
+    "Per_Capita_in_USD": 1358,
+    "Percentage_Growth": 8.5
+  },
+  {
+    "Year": 2009,
+    "GDP_In_Billion_USD": 1341.89,
+    "Per_Capita_in_USD": 1102,
+    "Percentage_Growth": 7.86
+  },
+  {
+    "Year": 2008,
+    "GDP_In_Billion_USD": 1198.9,
+    "Per_Capita_in_USD": 999,
+    "Percentage_Growth": 3.09
+  },
+  {
+    "Year": 2007,
+    "GDP_In_Billion_USD": 1216.74,
+    "Per_Capita_in_USD": 1028,
+    "Percentage_Growth": 7.66
+  },
+  {
+    "Year": 2006,
+    "GDP_In_Billion_USD": 940.26,
+    "Per_Capita_in_USD": 807,
+    "Percentage_Growth": 8.06
+  },
+  {
+    "Year": 2005,
+    "GDP_In_Billion_USD": 820.38,
+    "Per_Capita_in_USD": 715,
+    "Percentage_Growth": 7.92
+  },
+  {
+    "Year": 2004,
+    "GDP_In_Billion_USD": 709.15,
+    "Per_Capita_in_USD": 628,
+    "Percentage_Growth": 7.92
+  },
+  {
+    "Year": 2003,
+    "GDP_In_Billion_USD": 607.7,
+    "Per_Capita_in_USD": 547,
+    "Percentage_Growth": 7.86
+  },
+  {
+    "Year": 2002,
+    "GDP_In_Billion_USD": 514.94,
+    "Per_Capita_in_USD": 471,
+    "Percentage_Growth": 3.8
+  },
+  {
+    "Year": 2001,
+    "GDP_In_Billion_USD": 485.44,
+    "Per_Capita_in_USD": 452,
+    "Percentage_Growth": 4.82
+  },
+  {
+    "Year": 2000,
+    "GDP_In_Billion_USD": 468.39,
+    "Per_Capita_in_USD": 443,
+    "Percentage_Growth": 3.84
+  },
+  {
+    "Year": 1999,
+    "GDP_In_Billion_USD": 458.82,
+    "Per_Capita_in_USD": 442,
+    "Percentage_Growth": 8.85
+  },
+  {
+    "Year": 1998,
+    "GDP_In_Billion_USD": 421.35,
+    "Per_Capita_in_USD": 413,
+    "Percentage_Growth": 6.18
+  },
+  {
+    "Year": 1997,
+    "GDP_In_Billion_USD": 415.87,
+    "Per_Capita_in_USD": 415,
+    "Percentage_Growth": 4.05
+  },
+  {
+    "Year": 1996,
+    "GDP_In_Billion_USD": 392.9,
+    "Per_Capita_in_USD": 400,
+    "Percentage_Growth": 7.55
+  },
+  {
+    "Year": 1995,
+    "GDP_In_Billion_USD": 360.28,
+    "Per_Capita_in_USD": 374,
+    "Percentage_Growth": 7.57
+  },
+  {
+    "Year": 1994,
+    "GDP_In_Billion_USD": 327.28,
+    "Per_Capita_in_USD": 346,
+    "Percentage_Growth": 6.66
+  },
+  {
+    "Year": 1993,
+    "GDP_In_Billion_USD": 279.3,
+    "Per_Capita_in_USD": 301,
+    "Percentage_Growth": 4.75
+  },
+  {
+    "Year": 1992,
+    "GDP_In_Billion_USD": 288.21,
+    "Per_Capita_in_USD": 317,
+    "Percentage_Growth": 5.48
+  },
+  {
+    "Year": 1991,
+    "GDP_In_Billion_USD": 270.11,
+    "Per_Capita_in_USD": 303,
+    "Percentage_Growth": 1.06
+  },
+  {
+    "Year": 1990,
+    "GDP_In_Billion_USD": 320.98,
+    "Per_Capita_in_USD": 368,
+    "Percentage_Growth": 5.53
+  },
+  {
+    "Year": 1989,
+    "GDP_In_Billion_USD": 296.04,
+    "Per_Capita_in_USD": 346,
+    "Percentage_Growth": 5.95
+  },
+  {
+    "Year": 1988,
+    "GDP_In_Billion_USD": 296.59,
+    "Per_Capita_in_USD": 354,
+    "Percentage_Growth": 9.63
+  },
+  {
+    "Year": 1987,
+    "GDP_In_Billion_USD": 279.03,
+    "Per_Capita_in_USD": 340,
+    "Percentage_Growth": 3.97
+  },
+  {
+    "Year": 1986,
+    "GDP_In_Billion_USD": 248.99,
+    "Per_Capita_in_USD": 310,
+    "Percentage_Growth": 4.78
+  },
+  {
+    "Year": 1985,
+    "GDP_In_Billion_USD": 232.51,
+    "Per_Capita_in_USD": 296,
+    "Percentage_Growth": 5.25
+  },
+  {
+    "Year": 1984,
+    "GDP_In_Billion_USD": 212.16,
+    "Per_Capita_in_USD": 277,
+    "Percentage_Growth": 3.82
+  },
+  {
+    "Year": 1983,
+    "GDP_In_Billion_USD": 218.26,
+    "Per_Capita_in_USD": 291,
+    "Percentage_Growth": 7.29
+  },
+  {
+    "Year": 1982,
+    "GDP_In_Billion_USD": 200.72,
+    "Per_Capita_in_USD": 274,
+    "Percentage_Growth": 3.48
+  },
+  {
+    "Year": 1981,
+    "GDP_In_Billion_USD": 193.49,
+    "Per_Capita_in_USD": 270,
+    "Percentage_Growth": 6.01
+  },
+  {
+    "Year": 1980,
+    "GDP_In_Billion_USD": 186.33,
+    "Per_Capita_in_USD": 267,
+    "Percentage_Growth": 6.74
+  },
+  {
+    "Year": 1979,
+    "GDP_In_Billion_USD": 152.99,
+    "Per_Capita_in_USD": 224,
+    "Percentage_Growth": -5.24
+  },
+  {
+    "Year": 1978,
+    "GDP_In_Billion_USD": 137.3,
+    "Per_Capita_in_USD": 206,
+    "Percentage_Growth": 5.71
+  },
+  {
+    "Year": 1977,
+    "GDP_In_Billion_USD": 121.49,
+    "Per_Capita_in_USD": 186,
+    "Percentage_Growth": 7.25
+  },
+  {
+    "Year": 1976,
+    "GDP_In_Billion_USD": 102.72,
+    "Per_Capita_in_USD": 161,
+    "Percentage_Growth": 1.66
+  },
+  {
+    "Year": 1975,
+    "GDP_In_Billion_USD": 98.47,
+    "Per_Capita_in_USD": 158,
+    "Percentage_Growth": 9.15
+  },
+  {
+    "Year": 1974,
+    "GDP_In_Billion_USD": 99.53,
+    "Per_Capita_in_USD": 163,
+    "Percentage_Growth": 1.19
+  },
+  {
+    "Year": 1973,
+    "GDP_In_Billion_USD": 85.52,
+    "Per_Capita_in_USD": 144,
+    "Percentage_Growth": 3.3
+  },
+  {
+    "Year": 1972,
+    "GDP_In_Billion_USD": 71.46,
+    "Per_Capita_in_USD": 123,
+    "Percentage_Growth": -0.55
+  },
+  {
+    "Year": 1971,
+    "GDP_In_Billion_USD": 67.35,
+    "Per_Capita_in_USD": 119,
+    "Percentage_Growth": 1.64
+  },
+  {
+    "Year": 1970,
+    "GDP_In_Billion_USD": 62.42,
+    "Per_Capita_in_USD": 112,
+    "Percentage_Growth": 5.16
+  },
+  {
+    "Year": 1969,
+    "GDP_In_Billion_USD": 58.45,
+    "Per_Capita_in_USD": 108,
+    "Percentage_Growth": 6.54
+  },
+  {
+    "Year": 1968,
+    "GDP_In_Billion_USD": 53.09,
+    "Per_Capita_in_USD": 100,
+    "Percentage_Growth": 3.39
+  },
+  {
+    "Year": 1967,
+    "GDP_In_Billion_USD": 50.13,
+    "Per_Capita_in_USD": 96,
+    "Percentage_Growth": 7.83
+  },
+  {
+    "Year": 1966,
+    "GDP_In_Billion_USD": 45.87,
+    "Per_Capita_in_USD": 90,
+    "Percentage_Growth": -0.06
+  },
+  {
+    "Year": 1965,
+    "GDP_In_Billion_USD": 59.55,
+    "Per_Capita_in_USD": 119,
+    "Percentage_Growth": -2.64
+  },
+  {
+    "Year": 1964,
+    "GDP_In_Billion_USD": 56.48,
+    "Per_Capita_in_USD": 116,
+    "Percentage_Growth": 7.45
+  },
+  {
+    "Year": 1963,
+    "GDP_In_Billion_USD": 48.42,
+    "Per_Capita_in_USD": 101,
+    "Percentage_Growth": 5.99
+  },
+  {
+    "Year": 1962,
+    "GDP_In_Billion_USD": 42.16,
+    "Per_Capita_in_USD": 90,
+    "Percentage_Growth": 2.93
+  },
+  {
+    "Year": 1961,
+    "GDP_In_Billion_USD": 39.23,
+    "Per_Capita_in_USD": 85,
+    "Percentage_Growth": 3.72
+  }
+]
